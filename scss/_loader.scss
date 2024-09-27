@@ -1,0 +1,19 @@
+.loader {
+  margin: 30px auto;
+  width: 6.5rem;
+//   height : 6.5rem;
+  aspect-ratio: 1/1;
+  border: 1rem solid $text-color;
+  border-top: 1rem solid transparent;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+ 
+}
+ @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

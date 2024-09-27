@@ -1,0 +1,31 @@
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & input {
+    border: none;
+    outline: none;
+    background: $input-bg-color;
+    padding: 8px 24px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  & button {
+    border: none;
+    outline: none;
+    background: $input-bg-color;
+    width: 60px;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    & i {
+      color : $primary;
+    }
+  }
+}

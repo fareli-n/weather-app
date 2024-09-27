@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./reset";
+@import "./utility";
+@import "./loader";
+@import "./error";
+@import "./card";
+@import "./search";
+@import "./container";
+@import "./details";
+
+body {
+    height: 100vh;
+    background: $bg-color;
+}
+

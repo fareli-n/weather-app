@@ -1,0 +1,25 @@
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin: 50px auto 0;
+}
+.details > * + * {
+  margin-left: 30px;
+}
+
+.col {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+.col img {
+  width: 30px;
+  margin-right: 10px;
+}
+.col .col__text {
+  font-size: 18px;
+  margin-top: -6px;
+  width: min-content;
+}

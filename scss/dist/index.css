@@ -1,0 +1,145 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  margin: 30px auto;
+  width: 6.5rem;
+  aspect-ratio: 1/1;
+  border: 1rem solid white;
+  border-top: 1rem solid rgba(var(--accent), 1);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  color: #ff4444;
+  text-align: left;
+  padding: 10px 10px 0;
+  font-size: 18px;
+}
+
+.card {
+  width: 90%;
+  max-width: 475px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 10px;
+  padding: 30px 35px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  overflow: hidden;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search input {
+  border: none;
+  outline: none;
+  background: #ebfffc;
+  padding: 8px 24px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 8px;
+  font-size: 18px;
+}
+.search button {
+  border: none;
+  outline: none;
+  background: #ebfffc;
+  width: 60px;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search button i {
+  color: #5b548a;
+}
+
+.container {
+  width: 100%;
+}
+.container h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+.container h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin: 50px auto 0;
+}
+.details > * + * {
+  margin-left: 30px;
+}
+
+.col {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+.col img {
+  width: 30px;
+  margin-right: 10px;
+}
+.col .col__text {
+  font-size: 18px;
+  margin-top: -6px;
+  width: min-content;
+}
+
+body {
+  height: 100vh;
+  background: #222;
+}
